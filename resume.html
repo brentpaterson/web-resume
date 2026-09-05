@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brent Paterson - Resume</title>
+  <style>
+    /* CSS Reset & Box Sizing */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body Styling - Nicely colored with subtle modern gradient */
+    body {
+      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 50%, #94a3b8 100%);
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    /* Main Resume Container - Card Layout */
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12), 0 3px 10px rgba(15, 23, 42, 0.06);
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Top Header Section */
+    .header-section {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 36px 40px;
+      border-bottom: 4px solid #2563eb;
+    }
+
+    /* Header Info */
+    .header-details {
+      width: 100%;
+    }
+
+    .header-details h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    .header-details .subtitle {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #93c5fd;
+      margin-bottom: 12px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.92rem;
+      color: #cbd5e1;
+    }
+
+    .contact-links a {
+      color: #93c5fd;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .contact-links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Main Content Body */
+    .content-body {
+      padding: 36px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: #2563eb;
+    }
+
+    /* Skills Badges */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-badge {
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+
+    .skill-badge:hover {
+      background-color: #dbeafe;
+      border-color: #93c5fd;
+    }
+
+    /* Work Experience & Education Items */
+    .timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .item-card {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .item-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .item-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .item-company {
+      color: #2563eb;
+      font-weight: 600;
+    }
+
+    .item-date {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .bullet-list {
+      margin-top: 10px;
+      padding-left: 20px;
+      color: #334155;
+    }
+
+    .bullet-list li {
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .bullet-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Education Specific */
+    .degree-info {
+      font-size: 0.95rem;
+      color: #334155;
+      margin-top: 4px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 650px) {
+      body {
+        padding: 16px 8px;
+      }
+
+      .header-section {
+        padding: 28px 20px;
+      }
+
+      .contact-links {
+        justify-content: center;
+      }
+
+      .content-body {
+        padding: 24px 18px;
+      }
+
+      .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* Print Optimization */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .resume-container {
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+      }
+      .header-section {
+        background: #1e293b !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="resume-container">
+
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="header-details">
+        <h1>Brent Paterson</h1>
+        <div class="subtitle">Senior Integration Architect &bull; MS Computer Science Candidate</div>
+        <div class="contact-links">
+          <span class="contact-item">
+            📍 Castro Valley, CA
+          </span>
+          <span class="contact-item">
+            📞 <a href="tel:9253603195">925-360-3195</a>
+          </span>
+          <span class="contact-item">
+            ✉️ <a href="mailto:bpaterson861@gmail.com">bpaterson861@gmail.com</a>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-body">
+
+      <!-- Skills Section -->
+      <div class="section-block">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <span class="skill-badge">C / C++</span>
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">Node.js</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">React</span>
+          <span class="skill-badge">Groovy</span>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <div class="section-block">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline-list">
+
+          <!-- Docker -->
+          <div class="item-card">
+            <div class="item-header">
+              <span class="item-title"><span class="item-company">Docker</span> &mdash; Senior Integration Architect</span>
+              <span class="item-date">July 2024 &ndash; June 2026</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Worked with engineering and data teams to calculate client consumption automatically</li>
+              <li>Created billing reporting process to alert sales team of customers approaching overages</li>
+              <li>Built process to create sales orders as well as dependent records in NetSuite from Salesforce data</li>
+              <li>Worked with HR and revenue teams to build various automations to save operation costs</li>
+              <li>Implemented AI document processing to automate repetitive, dynamic data entry</li>
+            </ul>
+          </div>
+
+          <!-- ThoughtSpot -->
+          <div class="item-card">
+            <div class="item-header">
+              <span class="item-title"><span class="item-company">ThoughtSpot</span> &mdash; Manager, Business Apps Integrations</span>
+              <span class="item-date">May 2020 &ndash; July 2024</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Guided team to learn and develop integrations and oversaw development of all integrations and deployments</li>
+              <li>Designed and implemented dozens of integrations between business systems to improve productivity</li>
+              <li>Set up On Premises server to run integrations that require connection only through ThoughtSpot</li>
+              <li>Worked closely with various departments to get integration specifications, build integrations, and test integrations</li>
+            </ul>
+          </div>
+
+          <!-- Cloudera -->
+          <div class="item-card">
+            <div class="item-header">
+              <span class="item-title"><span class="item-company">Cloudera</span> &mdash; Professional Intern, Business Systems</span>
+              <span class="item-date">May 2018 &ndash; March 2019</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Created automated processes connecting to various business APIs</li>
+              <li>Adjusted various processes already in use for changing needs</li>
+              <li>Created a process that connected Salesforce to Slack channels for easier communication within the sales teams</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="section-block">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-list">
+
+          <!-- CSUEB -->
+          <div class="item-card">
+            <div class="item-header">
+              <span class="item-title">California State University, East Bay</span>
+              <span class="item-date">Expected Graduation: Fall 2026</span>
+            </div>
+            <div class="degree-info">Master of Science in Computer Science (MS)</div>
+          </div>
+
+          <!-- CSUS -->
+          <div class="item-card">
+            <div class="item-header">
+              <span class="item-title">California State University, Sacramento</span>
+              <span class="item-date">Graduated: Spring 2020</span>
+            </div>
+            <div class="degree-info">Bachelor of Science in Computer Science (BS)</div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
+
