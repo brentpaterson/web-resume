@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/resume-template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>Brent Paterson - Key Projects &amp; Architecture</title>
+  <!-- InstanceEndEditable -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- InstanceBeginEditable name="head" -->
+  <!-- InstanceEndEditable -->
+</head>
+<body>
+
+  <!-- Main Site Container (Named Style: .resume-wrapper) -->
+  <div class="resume-wrapper">
+
+    <!-- Global Header (No Photo Layout) -->
+    <header class="site-header">
+      <div class="header-main">
+        <h1 class="header-name"><a href="index.html">Brent Paterson</a></h1>
+        <p class="header-tagline">Senior Integration Architect &bull; MS Computer Science Candidate</p>
+        <div class="header-contact-bar">
+          <span>📍 Castro Valley, CA</span>
+          <span>📞 <a href="tel:9253603195">925-360-3195</a></span>
+          <span>✉️ <a href="mailto:bpaterson861@gmail.com">bpaterson861@gmail.com</a></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Global Navigation Bar (Named Style: .site-nav) -->
+    <nav class="site-nav" aria-label="Main Navigation">
+      <!-- InstanceBeginEditable name="Navigation" -->
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Overview</a></li>
+        <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- InstanceEndEditable -->
+    </nav>
+
+    <!-- Main Content Region -->
+    <main class="site-content">
+      <!-- InstanceBeginEditable name="MainContent" -->
+      <div class="page-title-box">
+        <h2 class="page-title">Technical Projects &amp; Solutions</h2>
+        <p class="page-description">Architectural case studies in enterprise automation, billing, and distributed systems.</p>
+      </div>
+
+      <div class="card-stack">
+
+        <!-- Project 1 -->
+        <article class="content-card">
+          <div class="card-top">
+            <h3 class="card-title">Automated Consumption &amp; Dynamic Billing Pipeline</h3>
+            <span class="date-pill">Docker</span>
+          </div>
+          <div class="card-subtitle">Technologies: Python, SQL, REST APIs, NetSuite, Salesforce</div>
+          <p>
+            <strong>Problem:</strong> Cloud infrastructure usage data was fragmented across multiple telemetry clusters, making timely billing calculations and overage warnings difficult for account teams.
+          </p>
+          <p>
+            <strong>Solution:</strong> Architected an automated data pipeline that aggregates usage consumption, normalizes metrics against contractual entitlement tiers, and triggers real-time alerts to the sales organization. Automated the downstream creation of complex NetSuite sales orders and billing schedules.
+          </p>
+          <p>
+            <strong>Impact:</strong> Eliminated end-of-quarter billing delays and provided account executives with early signals for expansion opportunities.
+          </p>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="content-card">
+          <div class="card-top">
+            <h3 class="card-title">AI-Powered Unstructured Document Processing</h3>
+            <span class="date-pill">Docker</span>
+          </div>
+          <div class="card-subtitle">Technologies: Python, Machine Learning APIs, OCR, Webhooks</div>
+          <p>
+            <strong>Problem:</strong> Operations and revenue teams were spending hundreds of hours manually keying dynamic, variable data from supplier agreements, partner invoices, and order forms.
+          </p>
+          <p>
+            <strong>Solution:</strong> Deployed an AI document processing ingestion engine that validates incoming documents, performs schema normalization, extracts tabular items, and posts verified records directly into core systems.
+          </p>
+          <p>
+            <strong>Impact:</strong> Drastically cut manual data entry errors and reduced operational document turnaround from days to minutes.
+          </p>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="content-card">
+          <div class="card-top">
+            <h3 class="card-title">Secure On-Premises Integration Gateway</h3>
+            <span class="date-pill">ThoughtSpot</span>
+          </div>
+          <div class="card-subtitle">Technologies: Java, Node.js, Linux, SSL/TLS, Custom API Middleware</div>
+          <p>
+            <strong>Problem:</strong> High-security customer environments prohibited direct cloud connections to internal database clusters.
+          </p>
+          <p>
+            <strong>Solution:</strong> Designed and configured a dedicated on-premises server runtime acting as an encrypted proxy gateway, ensuring only authenticated and whitelisted ThoughtSpot transactions were processed through internal firewalls.
+          </p>
+          <p>
+            <strong>Impact:</strong> Enabled enterprise customers in banking and healthcare to connect internal analytics while adhering strictly to compliance mandates.
+          </p>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="content-card">
+          <div class="card-top">
+            <h3 class="card-title">Event-Driven Salesforce-to-Slack Communication Hub</h3>
+            <span class="date-pill">Cloudera</span>
+          </div>
+          <div class="card-subtitle">Technologies: JavaScript, Salesforce Outbound Messaging, Slack Webhooks API</div>
+          <p>
+            <strong>Problem:</strong> Fast-moving sales and customer support teams lacked immediate cross-functional visibility into key customer milestone transitions.
+          </p>
+          <p>
+            <strong>Solution:</strong> Created a bi-directional webhook service listening for Salesforce contract updates and dispatching contextual, interactive Slack notification cards with deep links.
+          </p>
+          <p>
+            <strong>Impact:</strong> Improved team response times and kept cross-functional partners aligned in real-time.
+          </p>
+        </article>
+
+      </div>
+      <!-- InstanceEndEditable -->
+    </main>
+
+    <!-- Global Footer (Named Style: .site-footer) -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Brent Paterson &bull; CS 651 Web Systems &bull; Built with Dreamweaver Templates &amp; External Stylesheet (<a href="styles.css">styles.css</a>)</p>
+    </footer>
+
+  </div>
+
+</body>
+<!-- InstanceEnd -->
+</html>
+

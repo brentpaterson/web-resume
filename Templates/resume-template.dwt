@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TemplateBeginEditable name="doctitle" -->
+  <title>Brent Paterson - Professional Resume &amp; Portfolio</title>
+  <!-- TemplateEndEditable -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- TemplateBeginEditable name="head" -->
+  <!-- TemplateEndEditable -->
+</head>
+<body>
+
+  <!-- Main Site Container (Named Style: .resume-wrapper) -->
+  <div class="resume-wrapper">
+
+    <!-- Global Header (No Photo Layout) -->
+    <header class="site-header">
+      <div class="header-main">
+        <h1 class="header-name"><a href="index.html">Brent Paterson</a></h1>
+        <p class="header-tagline">Senior Integration Architect &bull; MS Computer Science Candidate</p>
+        <div class="header-contact-bar">
+          <span>📍 Castro Valley, CA</span>
+          <span>📞 <a href="tel:9253603195">925-360-3195</a></span>
+          <span>✉️ <a href="mailto:bpaterson861@gmail.com">bpaterson861@gmail.com</a></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Global Navigation Bar (Named Style: .site-nav) -->
+    <nav class="site-nav" aria-label="Main Navigation">
+      <!-- TemplateBeginEditable name="Navigation" -->
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Overview</a></li>
+        <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- TemplateEndEditable -->
+    </nav>
+
+    <!-- Main Content Region (Editable in each page instance) -->
+    <main class="site-content">
+      <!-- TemplateBeginEditable name="MainContent" -->
+      <div class="page-title-box">
+        <h2 class="page-title">Page Title</h2>
+        <p class="page-description">Page description goes here.</p>
+      </div>
+      <!-- TemplateEndEditable -->
+    </main>
+
+    <!-- Global Footer (Named Style: .site-footer) -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Brent Paterson &bull; CS 651 Web Systems &bull; Built with Dreamweaver Templates &amp; External Stylesheet (<a href="styles.css">styles.css</a>)</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
