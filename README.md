@@ -29,3 +29,4 @@ web-resume/
 - **Tag Styles:** Global defaults for `body`, `h1`-`h4`, `p`, `a`, `ul`, `ol`, `li`, `hr`, `input`, `textarea`, and `button`.
 - **Named Styles:** Custom CSS classes including `.resume-wrapper`, `.site-header`, `.site-nav`, `.nav-link`, `.page-title`, `.section-title`, `.lead-text`, `.content-card`, `.card-top`, `.date-pill`, `.stats-grid`, `.stat-box`, `.badge`, `.contact-layout`, and `.btn-primary`.
 - **Responsive & Print-Friendly:** Includes media queries for mobile/tablet screens and `@media print` rules for clean printing.
+
